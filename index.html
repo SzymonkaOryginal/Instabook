@@ -12,19 +12,58 @@
     <h1>Welcome to My eCommerce Site</h1>
   </header>
   <main>
-    <div class="product">
-      <h2>Super Produkt</h2>
-      <p>Cena: 20.00 PLN</p>
-      <div id="paypal-container-23X56YEQN7SYJ"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "23X56YEQN7SYJ",
-        }).render("#paypal-container-23X56YEQN7SYJ");
-      </script>
+    <div class="carousel">
+      <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <div class="carousel-container">
+        <div class="product">
+          <h2>Super Produkt 1</h2>
+          <p>Cena: 20.00 PLN</p>
+          <div id="paypal-container-1"></div>
+          <script>
+            paypal.HostedButtons({
+              hostedButtonId: "23X56YEQN7SYJ",
+            }).render("#paypal-container-1");
+          </script>
+        </div>
+        <div class="product">
+          <h2>Super Produkt 2</h2>
+          <p>Cena: 30.00 PLN</p>
+          <div id="paypal-container-2"></div>
+          <script>
+            paypal.HostedButtons({
+              hostedButtonId: "23X56YEQN7SYJ",
+            }).render("#paypal-container-2");
+          </script>
+        </div>
+        <div class="product">
+          <h2>Super Produkt 3</h2>
+          <p>Cena: 40.00 PLN</p>
+          <div id="paypal-container-3"></div>
+          <script>
+            paypal.HostedButtons({
+              hostedButtonId: "23X56YEQN7SYJ",
+            }).render("#paypal-container-3");
+          </script>
+        </div>
+      </div>
+      <button class="next" onclick="moveCarousel(1)">&#10095;</button>
     </div>
   </main>
   <footer>
     <p>&copy; 2024 My eCommerce Site</p>
   </footer>
+  <script>
+    let currentIndex = 0;
+    function moveCarousel(direction) {
+      const products = document.querySelectorAll('.product');
+      currentIndex = (currentIndex + direction + products.length) % products.length;
+      products.forEach((product, index) => {
+        product.style.display = index === currentIndex ? 'block' : 'none';
+      });
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      moveCarousel(0);
+    });
+  </script>
 </body>
 </html>
