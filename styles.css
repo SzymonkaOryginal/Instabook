@@ -13,42 +13,15 @@ main {
   padding: 2em;
 }
 .carousel {
-  position: relative;
   max-width: 600px;
   margin: auto;
-  overflow: hidden;
-}
-.carousel-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
 }
 .product {
-  min-width: 100%;
-  box-sizing: border-box;
-  display: none;
+  text-align: center;
 }
 .product h2 {
   margin: 0 0 0.5em;
 }
 .product p {
   margin: 0 0 1em;
-}
-button {
-  background-color: #0070ba;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-button:hover {
-  background-color: #005ea6;
-}
-.prev {
-  left: 0;
-}
-.next {
-  right: 0;
 }
