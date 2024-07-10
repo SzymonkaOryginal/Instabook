@@ -11,13 +11,16 @@ header, footer {
 }
 header .banner {
   width: 100%;
+  height: 200px; /* Możesz dostosować wysokość banera */
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .banner img {
   width: 100%;
-  height: auto;
-  max-height: 100px; /* Ustaw maksymalną wysokość banera */
-  object-fit: cover; /* Upewnij się, że obraz nie będzie zniekształcony */
+  height: 100%;
+  object-fit: cover; /* To spowoduje, że obraz wypełni kontener */
 }
 main {
   padding: 2em;
