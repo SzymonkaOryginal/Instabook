@@ -16,6 +16,8 @@ header .banner {
 header .banner img {
   width: 100%;
   height: auto;
+  max-height: 200px; /* Ustaw maksymalną wysokość banera */
+  object-fit: cover; /* Upewnij się, że obraz nie będzie zniekształcony */
 }
 main {
   padding: 2em;
