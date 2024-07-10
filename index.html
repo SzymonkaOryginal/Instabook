@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My eCommerce Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAhZrVt_MnfW6C-wqOQUAdKkf88hHub1N08OlND7p4wfh3_ntHQQ73K3JilhKyB90jGhK3UBY31qH09vM&components=hosted-buttons&disable-funding=venmo&currency=PLN"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My eCommerce Site</h1>
+  </header>
+  <main>
+    <div class="product">
+      <h2>Super Produkt</h2>
+      <p>Cena: 20.00 PLN</p>
+      <div id="paypal-container-23X56YEQN7SYJ"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "23X56YEQN7SYJ",
+        }).render("#paypal-container-23X56YEQN7SYJ");
+      </script>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 My eCommerce Site</p>
+  </footer>
+</body>
+</html>
