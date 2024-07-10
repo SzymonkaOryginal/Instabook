@@ -18,8 +18,9 @@
   <main>
     <div class="carousel">
       <div class="product">
-        <h2>Super Produkt 1</h2>
-        <p>Cena: 20.00 PLN</p>
+        <img src="https://via.placeholder.com/150" alt="Książka o Samorozwoju">
+        <h2>Książka o Samorozwoju</h2>
+        <p>$ 12.70 USD</p>
         <div id="paypal-container-1"></div>
         <script>
           paypal.HostedButtons({
@@ -28,8 +29,9 @@
         </script>
       </div>
       <div class="product">
-        <h2>Super Produkt 2</h2>
-        <p>Cena: 30.00 PLN</p>
+        <img src="https://via.placeholder.com/150" alt="Cute Dog">
+        <h2>Cute Dog</h2>
+        <p>$ 24.00 USD</p>
         <div id="paypal-container-2"></div>
         <script>
           paypal.HostedButtons({
@@ -38,13 +40,25 @@
         </script>
       </div>
       <div class="product">
-        <h2>Super Produkt 3</h2>
-        <p>Cena: 40.00 PLN</p>
+        <img src="https://via.placeholder.com/150" alt="Little Friend">
+        <h2>Little Friend</h2>
+        <p>$ 27.00 USD</p>
         <div id="paypal-container-3"></div>
         <script>
           paypal.HostedButtons({
             hostedButtonId: "23X56YEQN7SYJ",
           }).render("#paypal-container-3");
+        </script>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Christmas Deer">
+        <h2>Christmas Deer</h2>
+        <p>$ 19.00 USD</p>
+        <div id="paypal-container-4"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "23X56YEQN7SYJ",
+          }).render("#paypal-container-4");
         </script>
       </div>
     </div>
@@ -56,10 +70,33 @@
     $(document).ready(function(){
       $('.carousel').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 4,
         slidesToScroll: 1,
         dots: true,
-        arrows: true
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     });
   </script>
