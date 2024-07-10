@@ -23,6 +23,7 @@ main {
   margin: 1em;
   background-color: #fff;
   border-radius: 10px;
+  border: 2px solid #e0e0e0;
 }
 .product img {
   max-width: 100%;
@@ -56,7 +57,4 @@ main {
 }
 .slick-next {
   right: 0;
-}
-.slick-dots {
-  bottom: -30px;
 }
