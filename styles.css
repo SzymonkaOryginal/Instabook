@@ -33,10 +33,8 @@ main {
 .product h2 {
   margin: 0.5em 0;
 }
-.product p {
-  margin: 0.5em 0;
-  color: #0070ba;
-  font-weight: bold;
+#paypal-container-1, #paypal-container-2, #paypal-container-3, #paypal-container-4 {
+  margin-top: 10px;
 }
 .slick-prev, .slick-next {
   background-color: #0070ba;
@@ -57,4 +55,7 @@ main {
 }
 .slick-next {
   right: 0;
+}
+.slick-slide {
+  padding: 0 10px; /* Add padding between slides */
 }
