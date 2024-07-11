@@ -46,11 +46,13 @@ nav ul li a:hover {
 main {
   padding: 2em;
 }
-.section-title {
-  font-family: 'Blackadder ITC', cursive; /* Ustaw czcionkę dla nowego tytułu */
+.section-image {
   text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Odstęp od karuzeli produktów */
+}
+.section-image img {
+  max-width: 100%;
+  height: auto;
 }
 .carousel {
   max-width: 1000px;
