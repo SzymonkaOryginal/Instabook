@@ -46,6 +46,12 @@ nav ul li a:hover {
 main {
   padding: 2em;
 }
+.section-title {
+  font-family: 'Blackadder ITC', cursive; /* Ustaw czcionkę dla nowego tytułu */
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 .carousel {
   max-width: 1000px;
   margin: auto;
