@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nowa Nazwa Karty</title>
+  <title>Instabook - twoje ebooki</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="https://www.paypal.com/sdk/js?client-id=BAAhZrVt_MnfW6C-wqOQUAdKkf88hHub1N08OlND7p4wfh3_ntHQQ73K3JilhKyB90jGhK3UBY31qH09vM&components=hosted-buttons&disable-funding=venmo&currency=PLN"></script>
@@ -16,7 +16,8 @@
   <header>
     <h1>Welcome to My eCommerce Site</h1>
     <div class="banner">
-      <img src="images/banner.jpg" alt="Promotional Banner">
+      <!-- Upewnij się, że plik banner.jpg znajduje się w tym samym katalogu co ten plik HTML -->
+      <img src="banner.jpg" alt="Promotional Banner">
     </div>
   </header>
   <main>
@@ -75,3 +76,23 @@
         dots: false,
         arrows: true,
         responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</body>
+</html>
