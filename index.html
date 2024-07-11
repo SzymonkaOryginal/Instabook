@@ -3,113 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nowa Nazwa Karty</title>
+  <title>Instabook - twoje ebooki</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAhZrVt_MnfW6C-wqOQUAdKkf88hHub1N08OlND7p4wfh3_ntHQQ73K3JilhKyB90jGhK3UBY31qH09vM&components=hosted-buttons&disable-funding=venmo&currency=PLN"></script>
 </head>
 <body>
   <header>
-    <nav>
+	<nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home">Główna</a></li>
+        <li><a href="#products">Produkty</a></li>
+        <li><a href="#about">O nas</a></li>
+        <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
     <div class="banner">
-      <img src="images/banner.jpg" alt="Promotional Banner">
+      <!-- Upewnij się, że plik banner.jpg znajduje się w tym samym katalogu co ten plik HTML -->
+      <img src="banner.jpg" alt="Promotional Banner">
     </div>
-    <div class="carousel single-item">
+	<div class="carousel single-item">
       <div><img src="slide1.jpg" alt="Slide 1"></div>
       <div><img src="slide2.jpg" alt="Slide 2"></div>
-      <div><img src="slide3.jpg" alt="Slide 3"></div>
     </div>
   </header>
   <main>
-    <section id="home">
-      <h2>Home Section</h2>
-      <p>Welcome to our homepage!</p>
-    </section>
-    <section id="products">
-      <h2>Our Products</h2>
-      <div class="carousel products-carousel">
-        <div class="product">
-          <img src="https://via.placeholder.com/150" alt="Książka o Samorozwoju">
-          <h2>Książka o Samorozwoju</h2>
-          <div id="paypal-container-1"></div>
-          <script>
-            paypal.HostedButtons({
-              hostedButtonId: "23X56YEQN7SYJ",
-            }).render("#paypal-container-1");
-          </script>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/150" alt="Cute Dog">
-          <h2>Cute Dog</h2>
-          <div id="paypal-container-2"></div>
-          <script>
-            paypal.HostedButtons({
-              hostedButtonId: "23X56YEQN7SYJ",
-            }).render("#paypal-container-2");
-          </script>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/150" alt="Little Friend">
-          <h2>Little Friend</h2>
-          <div id="paypal-container-3"></div>
-          <script>
-            paypal.HostedButtons({
-              hostedButtonId: "23X56YEQN7SYJ",
-            }).render("#paypal-container-3");
-          </script>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/150" alt="Christmas Deer">
-          <h2>Christmas Deer</h2>
-          <div id="paypal-container-4"></div>
-          <script>
-            paypal.HostedButtons({
-              hostedButtonId: "23X56YEQN7SYJ",
-            }).render("#paypal-container-4");
-          </script>
-        </div>
+    <div class="carousel">
+      <div class="product">
+        <img src="polskieprzysmaki.jpg" alt="Opis produktu">
+        <h2>Książka o Samorozwoju</h2>
+        <div id="paypal-container-1"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "23X56YEQN7SYJ",
+          }).render("#paypal-container-1");
+        </script>
       </div>
-    </section>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Information about us...</p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Contact information...</p>
-    </section>
+      <div class="product">
+        <img src="polskieprzysmaki.jpg" alt="Opis produktu">
+        <h2>Cute Dog</h2>
+        <div id="paypal-container-2"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "23X56YEQN7SYJ",
+          }).render("#paypal-container-2");
+        </script>
+      </div>
+      <div class="product">
+        <img src="polskieprzysmaki.jpg" alt="Opis produktu">
+        <h2>Little Friend</h2>
+        <div id="paypal-container-3"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "23X56YEQN7SYJ",
+          }).render("#paypal-container-3");
+        </script>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Christmas Deer">
+        <h2>Christmas Deer</h2>
+        <div id="paypal-container-4"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "23X56YEQN7SYJ",
+          }).render("#paypal-container-4");
+        </script>
+      </div>
+    </div>
   </main>
   <footer>
     <p>&copy; 2024 My eCommerce Site</p>
   </footer>
   <script>
     $(document).ready(function(){
-      $('.carousel.single-item').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: true,
-        autoplay: true,
-        autoplaySpeed: 3000, // 3 seconds
-      });
-
-      $('.carousel.products-carousel').slick({
+      $('.carousel').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
         arrows: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     });
   </script>
