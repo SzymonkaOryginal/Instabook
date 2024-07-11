@@ -50,6 +50,16 @@ main {
   max-width: 1000px;
   margin: auto;
 }
+.carousel.single-item {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto; /* Adjust the margin as needed */
+}
+.carousel.single-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 .product {
   text-align: center;
   padding: 1em;
