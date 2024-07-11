@@ -22,6 +22,20 @@ header .banner img {
   height: 100%;
   object-fit: cover; /* To spowoduje, że obraz wypełni kontener */
 }
+header .new-banner {
+  width: 80%; /* Zmniejsza szerokość nowego banera */
+  height: 300px; /* Możesz dostosować wysokość nowego banera */
+  margin: 20px auto; /* Centruje nowy baner */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .new-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* To spowoduje, że obraz wypełni kontener */
+}
 nav {
   background-color: #333;
   padding: 10px 0;
@@ -49,16 +63,6 @@ main {
 .carousel {
   max-width: 1000px;
   margin: auto;
-}
-.carousel.single-item {
-  width: 100%;
-  max-width: 1000px;
-  margin: 20px auto; /* Adjust the margin as needed */
-}
-.carousel.single-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
 }
 .product {
   text-align: center;
