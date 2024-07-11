@@ -27,7 +27,7 @@ nav {
   padding: 10px 0;
 }
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /* Usuwa kropek z listy */
   margin: 0;
   padding: 0;
   text-align: center;
