@@ -14,7 +14,7 @@
 </head>
 <body>
   <header>
-	<nav>
+    <nav>
       <ul>
         <li><a href="#home">Główna</a></li>
         <li><a href="#products">Produkty</a></li>
@@ -23,17 +23,16 @@
       </ul>
     </nav>
     <div class="banner">
-      <!-- Upewnij się, że plik banner.jpg znajduje się w tym samym katalogu co ten plik HTML -->
       <img src="banner.jpg" alt="Promotional Banner">
     </div>
   </header>
   <main>
-	<div class="section-image">
+    <div class="section-image">
       <img src="napisnw1.jpg" alt="Najnowsze Wydania">
     </div>
     <div class="carousel">
       <div class="product">
-        <img src="polskieprzysmaki.jpg" alt="Opis produktu">
+        <img src="polskieprzysmaki.jpg" alt="Książka o Samorozwoju">
         <h2>Książka o Samorozwoju</h2>
         <div id="paypal-container-1"></div>
         <script>
@@ -43,7 +42,7 @@
         </script>
       </div>
       <div class="product">
-        <img src="polskieprzysmaki.jpg" alt="Opis produktu">
+        <img src="polskieprzysmaki.jpg" alt="Cute Dog">
         <h2>Cute Dog</h2>
         <div id="paypal-container-2"></div>
         <script>
@@ -53,7 +52,7 @@
         </script>
       </div>
       <div class="product">
-        <img src="polskieprzysmaki.jpg" alt="Opis produktu">
+        <img src="polskieprzysmaki.jpg" alt="Little Friend">
         <h2>Little Friend</h2>
         <div id="paypal-container-3"></div>
         <script>
@@ -70,6 +69,26 @@
           paypal.HostedButtons({
             hostedButtonId: "23X56YEQN7SYJ",
           }).render("#paypal-container-4");
+        </script>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="New Product 1">
+        <h2>New Product 1</h2>
+        <div id="paypal-container-5"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "23X56YEQN7SYJ",
+          }).render("#paypal-container-5");
+        </script>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="New Product 2">
+        <h2>New Product 2</h2>
+        <div id="paypal-container-6"></div>
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "23X56YEQN7SYJ",
+          }).render("#paypal-container-6");
         </script>
       </div>
     </div>
